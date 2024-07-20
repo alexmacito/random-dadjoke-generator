@@ -11,7 +11,11 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5372F0;
+  background: hsla(42, 93%, 57%, 1);
+  background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%); 
+  background: -moz-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%); 
+  background: -webkit-linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%); 
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7BA2C", endColorstr="#EA5459", GradientType=1 );
 }
 .box{
   width: 605px;
@@ -58,12 +62,12 @@ header, .content :where(p){
   width: 47px;
   display: flex;
   cursor: pointer;
-  color: #5372F0;
+  color: #ea5459;
   list-style: none;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  border: 2px solid #5372F0;
+  border: 2px solid #ea5459;
   transition: all 0.3s ease;
 }
 .features ul li:first-child{
@@ -71,7 +75,7 @@ header, .content :where(p){
 }
 ul li:is(:hover, .active){
   color: #fff;
-  background: #5372F0;
+  background: #ea5459;
 }
 ul .speech.active{
   pointer-events: none;
@@ -84,7 +88,7 @@ ul .speech.active{
   cursor: pointer;
   padding: 13px 22px;
   border-radius: 30px;
-  background: #5372F0;
+  background: #ea5459;
 }
 .buttons button.loading{
   opacity: 0.7;
